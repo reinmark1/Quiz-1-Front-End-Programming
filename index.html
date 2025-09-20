@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mark Assurances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">Mark Assurances</h1>
+            <nav id="nav-main"></nav>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h2>Halo!</h2>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Masukkan alamat email Anda">
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Kata Sandi</label>
+                <input type="password" id="password" name="password" required placeholder="Masukkan kata sandi Anda">
+            </div>
+            
+            <div id="message" class="message"></div>
+            
+            <button type="submit" class="btn">Login</button>
+        </form>
+        
+        <p class="bottom-link">
+            Belum punya akun? <a href="/sign-up.html">Daftar di sini</a>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

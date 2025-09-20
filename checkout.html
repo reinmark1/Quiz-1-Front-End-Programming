@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Mark Assurances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">Mark Assurances</h1>
+            <nav id="nav-main"></nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="checkout-container">
+            <h2>Ringkasan Pembayaran</h2>
+            <div id="checkoutSummary">
+                </div>
+            <div class="payment-methods">
+                <h4>Pilih Metode Pembayaran</h4>
+                <div class="payment-option">
+                    <input type="radio" id="va" name="payment" value="va" checked>
+                    <label for="va">Virtual Account</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="cc" name="payment" value="cc">
+                    <label for="cc">Kartu Kredit</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="ewallet" name="payment" value="ewallet">
+                    <label for="ewallet">E-Wallet</label>
+                </div>
+            </div>
+            <button id="payBtn" class="btn">Bayar Sekarang</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

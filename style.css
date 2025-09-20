@@ -1,0 +1,386 @@
+/* General Body & Font Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f2d2; /* Warna latar sedikit disesuaikan */
+    margin: 0;
+    color: #461312; /* Diubah */
+    min-height: 100vh;
+}
+
+/* --- Header & Navigation --- */
+.header {
+    background-color: #461312;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 0 20px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 30px;
+    color: #c9c769;
+    font-weight: 700;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #c9c769;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, #logoutBtn:hover {
+    color: #ed809d; 
+}
+
+#logoutBtn {
+    background: none;
+    border: none;
+    color: #c9c769;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+/* --- Main Content & Container --- */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* --- About Us Section --- */
+.about-us {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.about-us-content {
+    flex: 1;
+}
+
+.about-us-content h2 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.about-us-content p {
+    text-align: left;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-us-image {
+    flex: 1;
+    text-align: right;
+}
+
+.about-us-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* --- Login/Sign-Up Form Specific --- */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #461312; 
+    font-size: 28px;
+    text-align: center;
+}
+
+.form-container p {
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-group input:focus, .input-group select:focus {
+    outline: none;
+    border-color: #c9c769;
+}
+
+/* --- Buttons --- */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #461312;
+    border: none;
+    border-radius: 5px;
+    color: #c9c769;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #ed809d;
+    color: #461312;
+}
+
+/* --- Links & Messages --- */
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #f2f2f2; 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none; 
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    display: block;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    display: block; 
+}
+
+/* --- Home Page: Hero & Products --- */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f4e8; 
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.products h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #461312;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.product-card h4 {
+    margin: 15px 0 10px 0;
+    color: #461312; 
+}
+.product-card p {
+    padding: 0 20px;
+    font-size: 15px;
+    min-height: 60px;
+}
+.product-card .btn {
+    width: auto;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* --- Product Detail Page --- */
+.product-detail {
+    display: flex;
+    gap: 40px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.product-detail-img {
+    max-width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.product-detail-info {
+    flex-basis: 60%; 
+    display: flex;        
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+
+.product-detail-info h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.product-detail-info p {
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.product-detail-info h4{
+    padding-top: 10px; 
+    padding-bottom: 0%;
+    margin: 0;
+}
+.product-detail-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.btn-buy {
+    text-decoration: none;
+    width: auto;
+    align-self: flex-start;
+}
+
+/* --- Purchase Forms & Checkout --- */
+.purchase-form, .checkout-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.premium-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5f4e8;
+    border-left: 4px solid #461312;
+    font-size: 18px;
+    font-weight: 500;
+}
+.payment-methods {
+    margin: 20px 0;
+}
+
+/* --- History Page --- */
+.history-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+#historyTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+#historyTable th, #historyTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+#historyTable th {
+    background-color: #f2f2f2;
+}
+#historyTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.status-paid {
+    color: green;
+    font-weight: bold;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .product-detail {
+        flex-direction: column;
+    }
+    .product-detail-img {
+        max-width: 100%;
+    }
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+    nav {
+        margin-top: 10px;
+    }
+}

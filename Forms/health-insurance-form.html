@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beli Asuransi Kesehatan</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">Mark Assurances</h1>
+            <nav id="nav-main"></nav>
+        </div>
+    </header>
+    <main class="container">
+        <h2>Formulir Pembelian Asuransi Kesehatan</h2>
+        <form id="purchaseHealthForm" class="purchase-form">
+            <div class="input-group">
+                <label for="fullName">Nama Lengkap (sesuai KTP)</label>
+                <input type="text" id="fullName" required>
+            </div>
+            <div class="input-group">
+                <label for="dob">Tanggal Lahir</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="input-group">
+                <label for="occupation">Pekerjaan</label>
+                <input type="text" id="occupation" required>
+            </div>
+            <div class="input-group radio-group">
+                <label>Merokok?</label>
+                <input type="radio" id="smokerYes" name="smoker" value="1" required> <label for="smokerYes">Ya</label>
+                <input type="radio" id="smokerNo" name="smoker" value="0"> <label for="smokerNo">Tidak</label>
+            </div>
+             <div class="input-group radio-group">
+                <label>Punya riwayat hipertensi?</label>
+                <input type="radio" id="hypertensionYes" name="hypertension" value="1" required> <label for="hypertensionYes">Ya</label>
+                <input type="radio" id="hypertensionNo" name="hypertension" value="0"> <label for="hypertensionNo">Tidak</label>
+            </div>
+             <div class="input-group radio-group">
+                <label>Punya riwayat diabetes?</label>
+                <input type="radio" id="diabetesYes" name="diabetes" value="1" required> <label for="diabetesYes">Ya</label>
+                <input type="radio" id="diabetesNo" name="diabetes" value="0"> <label for="diabetesNo">Tidak</label>
+            </div>
+
+            <div id="premiumResult" class="premium-result"></div>
+
+            <button type="submit" class="btn">Hitung Premi</button>
+            <button type="button" id="checkoutBtn" class="btn" style="display: none;">Checkout</button>
+        </form>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
