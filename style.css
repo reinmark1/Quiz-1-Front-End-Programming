@@ -3,8 +3,14 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f3f2d2; /* Warna latar sedikit disesuaikan */
     margin: 0;
-    color: #461312; /* Diubah */
+    color: #461312;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 /* --- Header & Navigation --- */
@@ -60,8 +66,7 @@ nav a:hover, #logoutBtn:hover {
 /* --- Main Content & Container --- */
 .container {
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 20px auto;
 }
 
 /* --- About Us Section --- */
@@ -276,6 +281,7 @@ h2 {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin: auto
 }
 
 .product-detail-img {
@@ -319,6 +325,80 @@ h2 {
     text-decoration: none;
     width: auto;
     align-self: flex-start;
+}
+
+/* --- Styling khusus untuk Form Pembelian --- */
+
+.purchase-form {
+    background: #fff;
+    padding: 30px 40px; 
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.purchase-form .input-group {
+    margin-bottom: 25px; 
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.radio-group:last-of-type {
+    border-bottom: none; 
+}
+
+.radio-question {
+    font-weight: 500;
+}
+
+.radio-options {
+    display: flex;
+    gap: 25px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+}
+
+.radio-option label {
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+    cursor: pointer;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    width: 1.15em;
+    height: 1.15em;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+.radio-option input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #461312;
+}
+.radio-option input[type="radio"]:checked::before {
+    transform: scale(1);
 }
 
 /* --- Purchase Forms & Checkout --- */
@@ -365,6 +445,14 @@ h2 {
 .status-paid {
     color: green;
     font-weight: bold;
+}
+
+footer {
+    background-color: #461312;
+    color: #c9c769;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
 }
 
 /* --- Responsive Design --- */

@@ -14,29 +14,37 @@
         </div>
     </header>
 
-    <div class="form-container">
-        <h2>Halo!</h2>
-        
-        <form id="loginForm">
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Masukkan alamat email Anda">
-            </div>
+    <main>
+        <div class="form-container">
+            <h2>Halo!</h2>
             
-            <div class="input-group">
-                <label for="password">Kata Sandi</label>
-                <input type="password" id="password" name="password" required placeholder="Masukkan kata sandi Anda">
-            </div>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Masukkan alamat email Anda">
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Kata Sandi</label>
+                    <input type="password" id="password" name="password" required placeholder="Masukkan kata sandi Anda">
+                </div>
+                
+                <div id="message" class="message"></div>
+                
+                <button type="submit" class="btn">Login</button>
+            </form>
             
-            <div id="message" class="message"></div>
-            
-            <button type="submit" class="btn">Login</button>
-        </form>
-        
-        <p class="bottom-link">
-            Belum punya akun? <a href="/sign-up.html">Daftar di sini</a>
-        </p>
-    </div>
+            <p class="bottom-link">
+                Belum punya akun? <a href="/sign-up.html">Daftar di sini</a>
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <p>&copy; 2025 Mark Assurances by 535240194 - Rein Mark Manopo.</p>
+        </div>
+    </footer> 
 
     <script src="script.js"></script>
 </body>
